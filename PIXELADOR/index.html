@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/picture.png" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Imagen a Pixel</title>
+  
+  <link href='styles3.css'
+    rel='stylesheet' />
+
+
+  <script
+    src='index.js'></script>
+  <link href='styles.css'
+    rel='stylesheet' />
+  <link href='styles2.css'
+    rel='stylesheet' />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179965937-20"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179965937-20');
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/serviceworker.js')
+          .then((reg) => console.log('Success: ', reg.scope))
+          .catch((err) => console.log('Failure: ', err))
+      })
+    }
+  </script>
+
+</head>
+
+<body>
+
+<header class="nav-header">
+    <nav class="navbar navbar-expand-lg py-3 px-sm-2">
+      <div class="container px-0">
+
+        
+
+       
+
+        
+      </div>
+    </nav>
+
+  </header>
+  
+    </div>
+  </div>
+  
+  <div class="home-content-box" id="theme-content-box">
+    <div class="container">
+      <div class="custom-box">
+        <div class="inner-box">
+          <div style="display:none;" id="file-loader"><img
+              src="https://d33wubrfki0l68.cloudfront.net/7317d5afa7ad7a8c540f36a3eb9bc1cd62a054e4/spinner.gif" alt="">
+            <p>Please Wait ,Loading Your file </p>
+          </div>
+          <div class="saving-file-download-wrap" style="display: none;">
+            <img loading="lazy" class="trust-img"
+              src="https://d33wubrfki0l68.cloudfront.net/5dba020712118c4d0ccbc8a57de644074402d185/0d342/trust.svg"
+              alt="trust">
+            <p class="text-white my-2">Thanks for your patience</p>
+            <button class="btn" id="download-zip">Download</button>
+          </div>
+          <div class="file-input">
+            <div class="mb-4 d-flex justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" id="img-svg" viewBox="0 0 96 60">
+                <path fill="white"
+                  d="M61.9655252,3.24869071 L61.9765763,3.41278068 L62.045,5.866 L73.2405238,6.25793424 C74.5651997,6.30419294 75.6130942,7.37295092 75.6521743,8.67919891 L75.6517521,8.84366004 L73.9765763,56.8144197 C73.9303176,58.1390957 72.8615596,59.1869902 71.5553116,59.2260703 L71.3908505,59.2256481 L68.3103384,59.1184351 C68.0464245,59.8400339 67.3786666,60.3670921 66.5807111,60.425963 L66.4314488,60.4314488 L66.4314488,60.4314488 L30.4314488,60.4314488 C29.3268793,60.4314488 28.4314488,59.5360183 28.4314488,58.4314488 L28.431,55.114 L25.262454,55.2256481 C23.9377781,55.2719068 22.8178834,54.2788497 22.6877793,52.9785097 L22.6767282,52.8144197 L21.0015524,4.84366004 C20.9552937,3.51898409 21.9483508,2.39908942 23.2486907,2.2689853 L23.4127807,2.25793424 L59.3908505,1.00155235 C60.7155264,0.955293651 61.8354211,1.94835077 61.9655252,3.24869071 Z M54.2794488,39.4234488 L45.0024366,47.6809882 L40.7104488,42.4274488 L29.431,51.895 L29.4314488,58.4314488 C29.4314488,58.9442846 29.817489,59.3669559 30.3148276,59.424721 L30.4314488,59.4314488 L66.4314488,59.4314488 C66.9442846,59.4314488 67.3669559,59.0454086 67.424721,58.5480699 L67.4314488,58.4314488 L67.4304488,52.8324488 L54.2794488,39.4234488 Z M37.2275545,6.00094318 C36.4483334,5.97373218 35.7872098,6.54589593 35.688023,7.30354781 L35.676119,7.44768018 L35.676,8.431 L60.4314488,8.43144877 L68.4314488,16.4314488 L68.431,58.121 L71.4257499,58.2262572 C72.2049711,58.2534682 72.8660946,57.6813045 72.9652815,56.9236526 L72.9771854,56.7795202 L74.6523613,8.80876055 C74.6795723,8.0295394 74.1074085,7.36841587 73.3497567,7.26922904 L73.2056243,7.25732506 L37.2275545,6.00094318 Z M59.4257499,2.00094318 L23.4476802,3.25732506 C22.668459,3.28453606 22.0488581,3.9014237 22.002764,4.6641489 L22.0009432,4.80876055 L23.676119,52.7795202 C23.70333,53.5587414 24.3202177,54.1783423 25.0829429,54.2244364 L25.2275545,54.2262572 L28.431,54.114 L28.4314488,10.4314488 C28.4314488,9.32687927 29.3268793,8.43144877 30.4314488,8.43144877 L34.611,8.431 L34.6767282,7.41278068 C34.7229869,6.08810473 35.7917449,5.04021022 37.0979929,5.00113017 L37.262454,5.00155235 L61.045,5.831 L60.9771854,3.44768018 C60.9499744,2.66845903 60.3330868,2.04885809 59.5703616,2.00276399 L59.4257499,2.00094318 Z M59.431,9.431 L30.4314488,9.43144877 C29.9186129,9.43144877 29.4959416,9.81748896 29.4381765,10.3148276 L29.4314488,10.4314488 L29.431,50.591 L40.8439098,41.010846 L45.1168036,46.2404726 L54.3266522,38.0432874 L67.431,51.405 L67.431,17.431 L59.4314488,17.4314488 L59.431,9.431 Z M58.4314488,26.4314488 C60.088303,26.4314488 61.4314488,27.7745945 61.4314488,29.4314488 C61.4314488,31.088303 60.088303,32.4314488 58.4314488,32.4314488 C56.7745945,32.4314488 55.4314488,31.088303 55.4314488,29.4314488 C55.4314488,27.7745945 56.7745945,26.4314488 58.4314488,26.4314488 Z M60.431,9.846 L60.431,16.431 L67.016,16.431 L60.431,9.846 Z">
+                </path>
+              </svg>
+            </div>
+            <div class="d-flex justify-content-center align-items-center ">
+              <div id="Inputbox" class="boxes"> <img height="21px" width="21px"
+                  src="image1.png" />
+                <span class='ml-1'>Seleccionar Imagen</span> </div>
+              <div class="file-pick-dropdown">
+                <i class="fas fa-angle-down arrow-sign "></i>
+                <div class="file-picker-dropdown" style="display: none;">
+                  <button id="dropbox"> <svg viewBox="0 0 24 24" fill="#0061FF" xmlns="http://www.w3.org/2000/svg">
+                      <path id="icon"
+                        d="M12.0146 6.57367L6.50732 10.1473L12.0146 13.721L6.50732 17.2947L1 13.6912L6.50732 10.1176L1 6.57367L6.50732 3L12.0146 6.57367ZM6.47803 18.4263L11.9854 14.8527L17.4927 18.4263L11.9854 22L6.47803 18.4263ZM12.0146 13.6912L17.522 10.1176L12.0146 6.57367L17.4927 3L23 6.57367L17.4927 10.1473L23 13.721L17.4927 17.2947L12.0146 13.6912Z">
+                      </path>
+                    </svg> From Dropbox</button>
+                  <button id='filepicker'> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path id="Path" d="M8.33331 3H15.6666L23 15H15.6666L8.33331 3Z" fill="#FFC107">
+                      </path>
+                      <path id="Path_2" d="M4.6012 21L8.30086 15H23L19.3333 21H4.6012Z" fill="#1976D2">
+                      </path>
+                      <path id="Path_3" d="M1 15.0625L4.60119 21L12 9L8.33333 3L1 15.0625Z" fill="#4CAF50">
+                      </path>
+                    </svg> From Google Drive</button>
+                </div>
+              </div>
+            </div>
+            <p id="dropfile">O arrastra tu imagen aqui</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-img-box" style="display: none; margin-top:100px">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+             <div class="select-img-panel">
+              <div id="saving-data" style="display: none;">
+                <img loading="lazy"
+                  src="https://d33wubrfki0l68.cloudfront.net/5fb1796e0f2d3b78cf3a4572a021f16b7945d35d/60390/img/save.gif"
+                  alt="saving"> <span class="ml-2">Saving your
+                  images...</span>
+              </div>
+              <div id="pixel-box-panel">
+                <canvas id="pixelitcanvas" ></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="options-panel">
+              <div class="title">
+                Pixelá tu Imagen
+              </div>
+              <div class="options-title">
+                Una vez que finalizaste la edicion de tu imagen podés descargarla:
+              </div>
+              <div class="col-12">
+                <div class="download-wrapper">
+                  <button id="download-button" style="background-color: #6c3ada;"><svg
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                        d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM382.6 302.6l-103.1 103.1C270.7 414.6 260.9 416 256 416c-4.881 0-14.65-1.391-22.65-9.398L129.4 302.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 306.8V128c0-17.69 14.33-32 32-32s32 14.31 32 32v178.8l49.38-49.38c12.5-12.5 32.75-12.5 45.25 0S395.1 290.1 382.6 302.6z" />
+                    </svg>Download</button>
+                </div>
+              </div>
+
+              <div class="row divider">
+                <div class="col-12">
+                  <div class="options-title ">
+                    Tamaño de la Imagen:
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <div class="pixel-input-title">Ancho</div>
+                  <div class="pixel-input">
+                    <input type="number" id="maxwidth">
+                    <span>px</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-2">
+                  <div class="pixel-input-title">Altura</div>
+                  <div class="pixel-input">
+                    <input type="number" id="maxheight">
+                    <span>px</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row divider">
+                <div class="col-12">
+                  <div class="options-title">
+                    Grado de Pixelacion
+                  </div>
+                  <div>
+                    <div class="block-wrapper">
+                      <input class="custom-range" value="0" type="range" min="0" max="25" id="blocksize">
+                      <div id="blockvalue">0</div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="row divider">
+                <div class="col-12">
+                  <div class="options-title ">
+                    Filters:
+                  </div>
+                  <div class="filter-wrapper">
+                    <label> <input class="form-check-input" type="checkbox" id="greyscale"> <span
+                        class="checkbox-checkmark"></span> <span style="margin-left: 29px;">
+                        Escala de Grises
+                      </span> </label>
+                    <label class="mb-0 pb-0"> <input class="form-check-input" type="checkbox" id="palette"> <span
+                        class="checkbox-checkmark"></span> <span style="margin-left: 29px;">
+                      Mostrar Paleta
+                      </span> </label>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="row divider" id="palettes">
+                <div class="col-12">
+                  <div class="options-title ">
+                    Seleccionar color:
+                  </div>
+                  <div class="infoselects">
+                    <div class="colorpalette">
+                      <div class="text">
+
+                        <select name="paletteselector" id="paletteselector"></select>
+                      </div>
+                      <div class="icons" id="palettecolor">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row divider">
+                <div class="col-12">
+                  <button id="reset"> <span><i class="fas fa-sync-alt"></i></span> Reset </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <input class="d-none" onchange="fileOnChange()" type="file" id="file" accept=".webp,.png,.jpg,.jpeg,.gif" />
+    <span id="get-detail" style="display: none;" data-height="0" data-width="0"></span>
+  </div>
+ 
+  
+ 
+  <script defer="defer" src="index7.js"></script>
+  <script crossorigin='anonymous' defer
+    src='index6.js'></script>
+  <script defer="defer" src="index5.js"> </script>
+  <link href='styles4.css'
+    rel='stylesheet' />
+  <script data-fileName='pixel' data-folderName='feature' data-lang='es' data-tool='pixel'
+    src='index4.js'></script>
+  <script data-fileName='pixel' data-folderName='feature' data-lang='es' data-tool='pixel'
+    src='index2.js'></script>
+  <script src="index3.js" crossorigin="anonymous"></script>
+  <script>WebFont.load({ google: { families: ['Source Sans Pro:200,300,400,500,600,700,800&display=swap'] } })</script>
+  <link rel="stylesheet" href="styles.css" />
+</body>
+
+</html>

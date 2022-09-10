@@ -1,0 +1,409 @@
+button, input, select {
+    outline: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+#dropfile {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff
+}
+.col-md-4 {
+
+    margin-top: -90px;
+   
+
+}
+
+#svgcontainer {
+    height: 1px;
+    width: 1px;
+    visibility: hidden
+}
+
+#upper-loader {
+    width: 0%;
+    height: 13px;
+    background: #fff
+}
+
+.frame {
+    background: red;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 350px;
+    margin: auto
+}
+
+#demo {
+    visibility: hidden
+}
+
+.up {
+    margin-left: 10px;
+    color: #fff;
+    border: 3px solid #fff;
+    width: 200px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px
+}
+
+#loader-box {
+    background: url(/7317d5afa7ad7a8c540f36a3eb9bc1cd62a054e4/spinner.gif);
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 7;
+}
+
+#nav {
+    width: 80%;
+    margin: auto;
+    border: 3px solid #fff;
+    height: 70px
+}
+
+#errorMessage {
+    color: #ff0;
+    font-size: 25px;
+    text-align: center
+}
+
+.file {
+    height: 0;
+    width: 0;
+    visibility: hidden
+}
+
+#inp {
+    margin: auto;
+    width: 300px;
+    height: 47px;
+    border-radius: 10px;
+    margin: 10px
+}
+.custom-box {
+
+    background: rgb(43,105,139);
+    background: linear-gradient(45deg, rgba(43,105,139,1) 0%, rgba(116,92,190,1) 11%, rgba(108,58,218,1) 29%, rgba(18,168,246,0.9051995798319328) 52%, rgba(135,247,220,1) 90%);
+margin-top: 150px;
+border-radius: 7;
+
+}
+
+.boxes {
+    background: #fff;
+    border-radius: 7;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 24px;
+    height: 54px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: -14px
+}
+
+#content {
+    visibility: hidden
+}
+
+.boxes p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px
+}
+
+.modal-backdrop {
+    display: none
+}
+
+body {
+    display: block !important
+}
+
+pre {
+    display: none;
+    overflow: visible !important
+}
+
+#slider {
+    position: relative;
+    margin: 0;
+    width: 800px
+}
+
+@media (max-width:900px) {
+    #slider {
+        position: relative;
+        margin: 0;
+        width: 300px
+    }
+}
+
+#bottom {
+    position: absolute;
+    overflow: hidden;
+    width: 50%
+}
+
+#up {
+    position: absolute;
+    z-index: -1
+}
+
+#sliderInput {
+    position: relative;
+    margin: 0;
+    width: 800px
+}
+
+@media (max-width:900px) {
+    #sliderInput {
+        position: relative;
+        margin: 0;
+        width: 300px
+    }
+}
+
+.myBtn {
+    margin-top: 20px
+}
+
+#fontLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#actualArt {
+    width: fit-content;
+    height: 537px;
+    overflow: scroll
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center
+}
+
+#message {
+    color: #ff0;
+    font-size: 20px;
+    margin-top: 20px
+}
+
+.error1, .error2 {
+    color: #611a15;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    background: #fdecea
+}
+
+#error {
+    color: #611a15;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
+    background: #fdecea
+}
+
+#loadingMessage {
+    margin-top: 130px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px
+}
+
+@media (max-width:560px) {
+    #loadingMessage {
+        font-size: 24px
+    }
+}
+
+@media (max-width:425px) {
+    #loadingMessage {
+        font-size: 20px
+    }
+}
+
+#downloadButton {
+    padding: 10px 16px;
+    background: #fff
+}
+
+#thankyouImage {
+    height: 80px;
+    width: 80px;
+    margin-top: 50px
+}
+
+#thankyouText {
+    text-align: center;
+    color: #fff;
+    margin-top: 13px;
+    font-size: 17px
+}
+
+#Showloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px
+}
+
+.file-pick-dropdown {
+    display: inline-flex;
+    background: #fff;
+    height: 54px;
+    border-left: 1px solid rgba(0, 0, 0, .15);
+    padding: 13px 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    align-items: center;
+    position: relative;
+    margin-top: -14px
+}
+
+.file-pick-dropdown i {
+    margin: 0
+}
+
+.file-picker-dropdown {
+    width: 220px;
+    position: absolute;
+    background: #fff;
+    top: 111%;
+    right: 0;
+    display: none;
+    box-shadow: rgb(26 26 26 / 20%) 0 0 12px;
+    border-radius: 4px
+}
+
+.arrow-sign {
+    font-size: 18px
+}
+
+.file-picker-dropdown svg {
+    height: 24px;
+    width: 24px
+}
+
+.file-picker-dropdown a, .file-picker-dropdown button {
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    text-align: left;
+    background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 24px;
+    list-style: none;
+    height: 54px
+}
+
+.file-picker-dropdown button:hover {
+    background: #efefef
+}
+
+#downloadButton svg {
+    height: 25px
+}
+
+.container2 {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#upload_img {
+    margin: auto;
+    margin-top: 16px;
+    height: 67px;
+    width: 98px;
+    margin-bottom: 30px !important
+}
+
+@media (max-width:387px) {
+    #inp {
+        width: 90%
+    }
+}
+
+#saving {
+    height: 59px;
+    width: 209px;
+    border: 3px solid #fff;
+    background: rgba(90, 90, 90, .466)
+}
+
+.submit {
+    padding: 14px 84px;
+    margin-left: -1px
+}
+
+@media (max-width:592px) {
+    .splitInput {
+        width: 80%
+    }
+}
+
+@media (max-width:506px) {
+    #saving {
+        margin-right: 13px
+    }
+}
+
+#splitList {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 45px
+}
+
+#splitList ol li {
+    color: #fff
+}
+
+#splitList ol {
+    float: left
+}
+
+#splitList canvas {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 100%
+}
+
+.splitBtn {
+    margin: 15px;
+    padding: 11px 18px;
+    width: 155px
+}
+
+.loader-box {
+    background: url(/7317d5afa7ad7a8c540f36a3eb9bc1cd62a054e4/spinner.gif);
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto
+}
